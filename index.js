@@ -113,7 +113,7 @@ app.get("/logout", (req, res) => {
 });
 
 server.listen(
-  process.env.PORT || 3000,
+  process.env.PORT || 8080,
   process.env.IP || "127.0.0.1",
   function () {
     const addr = server.address();
