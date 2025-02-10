@@ -1,0 +1,30 @@
+{
+  "name": "salonsapi",
+  "version": "1.0.0",
+  "description": "API for salon service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-force/salonsAPI.git"
+  },
+  "author": "p-force",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/p-force/salonsAPI/issues"
+  },
+  "homepage": "https://github.com/p-force/salonsAPI#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.741.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-basic-auth": "^1.2.1",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
