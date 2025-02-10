@@ -9,13 +9,22 @@ const basicAuth = require("express-basic-auth");
 const app = express();
 const server = require("http").Server(app);
 
+// const pool = mysql.createPool({
+//   connectionLimit: 5,
+//   host: process.env.DB_HOST,
+//   user: process.env.DB_PORT,
+//   database: process.env.DB_USER,
+//   port: process.env.DB_PASSWORD,
+//   password: process.env.DB_DATABASE,
+// });
+
 const pool = mysql.createPool({
   connectionLimit: 5,
-  host: process.env.DB_HOST,
-  user: process.env.DB_PORT,
-  database: process.env.DB_USER,
-  port: process.env.DB_PASSWORD,
-  password: process.env.DB_DATABASE,
+  host: "sql7.freesqldatabase.com",
+  user: "sql7761490",
+  database: "sql7761490",
+  port: "3306",
+  password: "dTUvSeUg4Y",
 });
 
 app.use(express.json());
