@@ -7,7 +7,7 @@ const morgan = require("morgan");
 const basicAuth = require("express-basic-auth");
 
 const app = express();
-const server = require("http").Server(app);
+// const server = require("http").Server(app);
 
 // const pool = mysql.createPool({
 //   connectionLimit: 5,
@@ -112,11 +112,16 @@ app.get("/logout", (req, res) => {
   res.status(401).send("Logged out");
 });
 
-server.listen(
-  process.env.PORT || 8080,
-  process.env.IP || "127.0.0.1",
-  function () {
-    const addr = server.address();
-    console.log("Server listening at", addr.address + ":" + addr.port);
-  }
-);
+// server.listen(
+//   process.env.PORT || 8080,
+//   process.env.IP || "127.0.0.1",
+//   function () {
+//     const addr = server.address();
+//     console.log("Server listening at", addr.address + ":" + addr.port);
+//   }
+// );
+
+const port = process.env.PORT || 8080;
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on port ${port}`);
+});
