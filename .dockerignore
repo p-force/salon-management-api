@@ -1,2 +1,6 @@
 node_modules
 npm-debug.log
+middleware
+src
+utils.js
+dump.sql
