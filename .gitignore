@@ -1,7 +1,3 @@
 .env
 node_modules
-middleware
-src
-utils.js
-dump.sql
 .DS_Store
