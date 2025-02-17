@@ -4,3 +4,4 @@ middleware
 src
 utils.js
 dump.sql
+.DS_Store
