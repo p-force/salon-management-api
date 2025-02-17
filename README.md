@@ -1,5 +1,3 @@
-Вот пример README для твоего проекта:
-
 ---
 
 # Salon Management API
